@@ -1,0 +1,25 @@
+clearvars;
+close all;
+clc;
+%% Achieve estimated PDC from "CONNECTIVITY_PDC" %%
+[ePDC, f,p_e]=CONNECTIVITY_PDC('A:\Term 5th\Paper\MVAR&PDC - MatLab\SCHIZO',...
+    '32w1.eea', 128, 7680, 0, 5, 'TRUE');
+%delta=1:4;theta=4:7;alpha=8:13;beta=14:30;gamma=30:64;
+
+%% Connectivity Matrix %%
+freq_range=[1,4;4,7;8,13;14,30;30,64];
+connectivity_matrix=zeros(16,16,5);
+for k=1:5
+    for i=1:16
+        for j=1:16
+            freq_indx=(find(f>=freq_range(k,1) & f<=freq_range(k,2)));
+            connectivity_matrix(i,j,k)=mean(squeeze(ePDC(i,j,freq_indx)));
+            connectivity_matrix(:,:,k)=connectivity_matrix(:,:,k)-diag(diag(connectivity_matrix(:,:,k)));
+        end
+    end
+end
+%% Save and Plot %%
+figure()
+imagesc(connectivity_matrix(:,:,3))
+title('Normal/Subject_1/Alpha')
+save('A:\Term 5th\Paper\MVAR&PDC - MatLab\connectivity matrix for python\subject_schizo_2')
