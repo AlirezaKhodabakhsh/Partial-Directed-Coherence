@@ -11,3 +11,4 @@ http://brain.bio.msu.ru/eeg_schizophrenia.htm
 # (not completed)
 
 ![alt-text](/PDC_connectivity/Results/PDC_class1.png "optional-title")
+>>>>>>> 40cff83cfcff941a5a4e3fca049d74694bc6ec42
