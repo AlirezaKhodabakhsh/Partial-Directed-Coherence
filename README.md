@@ -8,3 +8,4 @@ http://brain.bio.msu.ru/eeg_schizophrenia.htm
 ![This is an image](https://i.ibb.co/TktfVNj/download-1.png)
 
 # THE END
+# (not completed)
