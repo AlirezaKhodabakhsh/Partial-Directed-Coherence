@@ -7,3 +7,4 @@ http://brain.bio.msu.ru/eeg_schizophrenia.htm
 # Graph 3D:
 ![This is an image](https://i.ibb.co/TktfVNj/download-1.png)
 
+# THE END
