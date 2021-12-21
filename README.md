@@ -10,4 +10,4 @@ http://brain.bio.msu.ru/eeg_schizophrenia.htm
 # THE END
 # (not completed)
 
-![alt-text](D:\PDC_connectivity\Results\PDC_class1.png "optional-title")
+<img height="500" src="D:\PDC_connectivity\Results\PDC_class1.png" title="hello" width="500"/>
